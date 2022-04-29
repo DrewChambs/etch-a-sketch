@@ -1,0 +1,19 @@
+/* Reset ****/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  padding: 5em 3em;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+}
+.title {
+  font-size: 4rem;
+}
