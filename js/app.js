@@ -1,24 +1,45 @@
-// Link to container
-const mainContainer = document.querySelector(".wrapper");
+// Link to body section
+const bodyEtch = document.querySelector(".body");
+// Link to sketch container
+const wrapperContainer = document.querySelector(".wrapper");
 
-// Create div elements
+// Default Setup
+let defaultSetup = 16;
+let defaultTotal = defaultSetup * defaultSetup;
+
+// Get User selection
+let selection = 16;
+let userTotal = selection * selection;
+
+// div element
 let div;
-let total = 98 * 98;
-for (let i = 0; i < total; i++) {
+
+//// Build Grid ////
+for (let i = 0; i < userTotal; i++) {
+  // Create divs for grid
   div = document.createElement("div");
   div.setAttribute("class", "etch-box");
-  // div.setAttribute("class", "change_grid");
-  mainContainer.appendChild(div);
+  wrapperContainer.appendChild(div);
 }
+// paintGrid(selection);
 // Link to grid
 const etchBox = document.querySelectorAll(".etch-box");
 
-// Add Event listener to grid
+// Event listener to paint grid
 etchBox.forEach(item => {
   item.addEventListener("mouseover", () => {
-    console.log("workin!");
     item.style.backgroundColor = "black";
   });
 });
 
-console.log("sillll");
+paintGrid(selection);
+
+// Paint grid function
+function paintGrid(selection) {
+  wrapperContainer.style.display = `grid`;
+  wrapperContainer.style.gridTemplateColumns = `repeat(${selection}, 1fr)`;
+  wrapperContainer.style.gridTemplateRows = `repeat(${selection}, 1fr)`;
+}
+
+// wrapperContainer.style.gridTemplateColumns = `repeat(${userTotal}, 1fr)`;
+// wrapperContainer.style.gridTemplateRows = `repeat(${userTotal}, 1fr)`;

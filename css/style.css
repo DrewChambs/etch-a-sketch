@@ -9,12 +9,6 @@
 :root {
   font-family: sans-serif;
 }
-/* .body {
-  padding: 5em;
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-} */
 .title {
   font-size: 4rem;
   text-align: center;
@@ -29,27 +23,33 @@
   background-color: red;
   border-radius: 50px;
 }
-/* Main */
-.wrapper {
-  /* margin: 0 auto; */
-  width: 720px;
-  height: 720px;
-  padding: 5em;
-  display: grid;
-  /* grid-template-columns: repeat(16, minmax(2em, 1fr)); */
-  /* grid-template-columns: repeat(16, 2em); */
-  /* grid-template-rows: repeat(16, 2em); */
-  /* grid-auto-rows: 2em; */
-  grid-template-columns: repeat(98, 1fr);
-  grid-template-rows: repeat(98, 1fr);
-}
 .etch-box {
   background-color: rgb(247, 242, 240);
-  /* border: 1px solid #000; */
+  border: 1px solid rgb(211, 211, 211);
+}
+/* Main */
+.wrapper {
+  width: 820px;
+  height: 720px;
+  padding: 5em;
+  /* Starting grid */
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
 }
 .change_grid {
+  width: 820px;
+  height: 720px;
+  padding: 5em;
+  /* User-defined grid */
   display: grid;
   grid-template-columns: repeat(98, 1fr);
   grid-template-rows: repeat(98, 1fr);
 }
+
 /* ********************************* */
+
+/* grid-template-columns: repeat(16, minmax(2em, 1fr)); */
+/* grid-template-columns: repeat(16, 2em); */
+/* grid-template-rows: repeat(16, 2em); */
+/* grid-auto-rows: 2em; */
