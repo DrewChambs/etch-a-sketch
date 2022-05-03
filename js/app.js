@@ -18,7 +18,6 @@ userSelectBtn.addEventListener("click", () => {
 });
 
 resetBtn.addEventListener("click", () => {
-  // wrapperContainer.innerHTML = "";
   location.reload();
 });
 
@@ -33,7 +32,7 @@ function startingGrid() {
   const etchBox = document.querySelectorAll(".etch-box");
   // Add EventListener
   etchBox.forEach(item => {
-    item.addEventListener("mouseover", () => {
+    item.addEventListener("mouseleave", () => {
       item.style.backgroundColor = "black";
     });
   });
@@ -58,7 +57,7 @@ function printNewGrid(selection) {
   const etchBox = document.querySelectorAll(".etch-box");
   // Add EventListener
   etchBox.forEach(item => {
-    item.addEventListener("mouseover", () => {
+    item.addEventListener("mouseleave", () => {
       item.style.backgroundColor = "black";
     });
   });
