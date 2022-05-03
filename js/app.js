@@ -18,7 +18,7 @@ userSelectBtn.addEventListener("click", () => {
 });
 
 resetBtn.addEventListener("click", () => {
-  wrapperContainer.innerHTML = "";
+  // wrapperContainer.innerHTML = "";
   location.reload();
 });
 
