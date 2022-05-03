@@ -12,10 +12,16 @@
 .body {
   padding: 3em 0;
 }
+/*** Typography ***/
 .title {
   font-size: 4rem;
   text-align: center;
 }
+.select-title {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+/* Outer Container */
 .container {
   margin: 0 auto;
   max-width: 900px;
@@ -25,31 +31,23 @@
   border: 5px solid #000;
   background-color: red;
   border-radius: 50px;
+  box-shadow: 0px 0px 13px 3px rgba(0, 0, 0, 0.55);
+}
+/*** Main ***/
+.wrapper {
+  width: 600px;
+  height: 600px;
+  padding: 5em 3em;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
 }
 .etch-box {
   background-color: rgb(247, 242, 240);
   border: 1px solid rgb(211, 211, 211);
 }
-.user-box {
-  background-color: rgb(247, 242, 240);
-  border: 1px solid rgb(211, 211, 211);
-}
-/* Main */
-.wrapper {
-  width: 820px;
-  height: 720px;
-  padding: 5em;
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
-}
-.wrapper-grid {
-  /* Starting grid */
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
-}
-/* Button & Button Container */
+
+/*** Button & Button Container ***/
 .containerBtn {
   display: flex;
   justify-content: center;
@@ -65,17 +63,14 @@
   color: #fff;
   font-size: 1rem;
   border-radius: 5px;
-  /* Box-shadow */
   box-shadow: 0px 0px 13px 3px rgba(0, 0, 0, 0.55);
 }
+
+/* Disable Style */
 .disableButton {
   background-color: lightgrey;
   color: grey;
   border: none;
   box-shadow: none;
-}
-.select-title {
-  font-weight: 900;
-  font-size: 1.2rem;
 }
 /* ********************************* */
