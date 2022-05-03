@@ -8,7 +8,7 @@ startingGrid();
 
 // User selection
 userSelectBtn.addEventListener("click", () => {
-  let selection = prompt("enter num");
+  let selection = prompt("Enter a number to set size of grid");
 
   if (selection > 100 || selection <= 0) {
     return alert("Enter between 1 and 100");
