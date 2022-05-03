@@ -10,8 +10,8 @@ startingGrid();
 userSelectBtn.addEventListener("click", () => {
   let selection = prompt("enter num");
 
-  if (selection > 100) {
-    return alert("Enter a number no more than 100");
+  if (selection > 100 || selection <= 0) {
+    return alert("Enter between 1 and 100");
   } else {
     printNewGrid(selection);
   }
