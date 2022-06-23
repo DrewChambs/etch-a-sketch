@@ -1,9 +1,6 @@
 # Etch-a-sketch Application - The Odin Project Application
 Part of a series of appplications, and various web projects, from The Odin Project.
 
-# Link: 
-https://drewchambs.github.io/etch-a-sketch/
-
 # Table of contents
 
 •	Overview
@@ -17,17 +14,15 @@ https://drewchambs.github.io/etch-a-sketch/
 •	Author - Andrew Chambers
 •	Website - andrewchambersweb.com
 
-
 # Overview
 
 # The challenge
 
 Users should be able to:
-•	Play a round of games until the winner has 5 wins
+•	Play a round of games until the winner is declared after 5 wins
 
 
 # Screenshot
-
 
 # Link 
 https://drewchambs.github.io/etch-a-sketch/
